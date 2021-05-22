@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500&display=swap');
+
+// Variables
+@import './variables.scss';
+
+html,
+body {
+  font-family: $font-family-sans-serif;
+  color: $primary-gray;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: $primary-white;
+  border-bottom: 5px solid $light-green;
+  padding: 0 50px;
+  > nav > a {
+    margin-right: 40px;
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    font-size: $font-size-xs;
+    line-height: $line-height-xs;
+    letter-spacing: 0.44px;
+  }
+  > div > button:first-child {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+.flex {
+  display: flex;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.items-center {
+  align-items: center;
+}
+.flex-col {
+  flex-direction: column;
+}
+
+.ml-40 {
+  margin-left: 40px;
+}
+.mt-10 {
+  margin-top: 10px;
+}
+.mt-20 {
+  margin-top: 20px;
+}
+.mt-40 {
+  margin-top: 40px;
+}
+.mt-50 {
+  margin-top: 50px;
+}
+.mt-70 {
+  margin-top: 70px;
+}
+.mr-30 {
+  margin-right: 30px;
+}

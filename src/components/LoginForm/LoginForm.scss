@@ -1,0 +1,120 @@
+@import "../../variables.scss";
+
+.open {
+    display: block;
+}
+
+.close {
+    height: 0;
+    display: none;
+}
+.login {
+    border: 1px solid #ccc;
+    position: fixed;
+    top: 40px;
+    right: 40px;
+    background: #fff;
+    width: 409px;
+    height: 649px;
+    padding: 70px 50px 0;
+    border-radius: 5px;
+    z-index: 3;
+    &__close-btn {
+        float: right;
+        margin-top: -27px;
+        margin-right: -27px;
+        font-size: 52px;
+        color: $dark-grey;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    &__wrapper {
+        & svg {
+            display: block;
+            margin: 0 auto;
+            width: 80px;
+            height: 80px;
+        }
+    }
+    &__title {
+        margin: 0;
+        text-align: center;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 0.44px;
+        color: $primary-gray;
+    }
+    &__title-pay {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 48px;
+        letter-spacing: 0.44px;
+        color: $primary-gray;
+    }
+    &__logo-wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__logo-facebook,
+    &__logo-vk {
+        margin-right: 40px;
+    }
+    &__text {
+        font-weight: 450;
+        font-size: 24px;
+        line-height: 36px;
+        text-align: center;
+        letter-spacing: 0.44px;
+        color: $primary-gray;
+    }
+    &__text-pay {
+        font-weight: 450;
+        font-size: 24px;
+        line-height: 36px;
+        letter-spacing: 0.44px;
+        color: $primary-gray;
+    }
+    &__form-input {
+        border: none;
+        border-bottom: 1px solid $dark-blue;
+        width: 389px;
+        padding: 20px 0;
+        font-size: 18px;
+        line-height: 24px;
+        color: $dark-grey;
+        background: transparent;
+    }
+    &__form-btn {
+        display: block;
+        width: 100%;
+        background: rgba(158, 206, 179, 0.3);
+        border: 1px solid $light-green;
+        box-sizing: border-box;
+        border-radius: 5px;
+        padding: 13px;
+        font-size: 24px;
+        color: $dark-blue;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+    &__small-text {
+        font-size: 18px;
+        line-height: 24px;
+        color: $primary-gray;
+    }
+    &__link {
+        color: #7294c7;
+        text-decoration: none;
+        &-fogot_password {
+            display: block;
+            text-decoration: none;
+            text-align: center;
+        }
+    }
+}
